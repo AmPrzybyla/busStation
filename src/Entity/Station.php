@@ -20,9 +20,8 @@ class Station
     private $id;
 
     /**
-     * @ORM\Column(type="string")
-     * @Assert\Length(min=5, minMessage="Title must have 5 more then 5 character")
-     */
+     * @ORM\ManyToMany(targetEntity="App\Entity\Title", inversedBy="stations")
+     * */
     private $title;
 
     /**
@@ -46,6 +45,7 @@ class Station
      */
     private $files;
 
+
     public function __construct()
     {
         $this->files=new ArrayCollection();
@@ -57,7 +57,7 @@ class Station
     }
 
     /**
-     * @return mixed
+     * @return Assert\Collection
      */
     public function getTitle()
     {
