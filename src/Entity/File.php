@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 /**
  * @ORM\Entity(repositoryClass="App\Repository\FileRepository")
  */
@@ -16,6 +18,18 @@ class File
     private $id;
 
     /**
+     * @Assert\File(maxSize="1M", mimeTypes = {
+     *          "image/png",
+     *          "image/jpeg",
+     *          "image/jpg",
+     *          "application/pdf",
+     *          "application/x-pdf",
+     *          "application/doc",
+     *          "application/xls",
+     *          "application/ods",
+     *          "application/odt",},
+     *     maxSizeMessage="Max file size is 1Mb",
+     *     mimeTypesMessage="suported file types: png, jpeg/jpg, pdf, doc, xls, ods, odt")
      * @ORM\Column(type="string")
      */
     private $name;

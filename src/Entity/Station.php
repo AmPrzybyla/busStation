@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -41,7 +42,9 @@ class Station
     private $userId;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\File", mappedBy="station", cascade={"all"})
+     * @Assert\Valid()
+     * @Assert\Count(3)
+     * @ORM\OneToMany(targetEntity="App\Entity\File", mappedBy="station", cascade={"persist"})
      */
     private $files;
 
@@ -57,7 +60,7 @@ class Station
     }
 
     /**
-     * @return Assert\Collection
+     * @return Collection
      */
     public function getTitle()
     {
@@ -146,6 +149,7 @@ class Station
         }
         return [];
     }
+
 
     public function attachFile(UploadedFile $file=null)
     {

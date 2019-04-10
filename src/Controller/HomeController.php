@@ -29,6 +29,7 @@ class HomeController extends AbstractController
      */
     public function addStation(Request $request)
     {
+
         $station= new Station();
         $form=$this->createForm(StationType::class, $station);
 
@@ -55,7 +56,7 @@ class HomeController extends AbstractController
                 $fil->setStation($station);
                 $files->add($fil);
             }
-
+           // dd($station);
             $station->setFiles($files);
             $em->persist($station);
             $em->flush();
