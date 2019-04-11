@@ -24,7 +24,7 @@ class Title
     private $name;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Station", mappedBy="title")
+     * @ORM\OneToMany(targetEntity="App\Entity\Station", mappedBy="title")
      */
     private $stations;
 

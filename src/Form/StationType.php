@@ -23,16 +23,13 @@ class StationType extends AbstractType
         $builder->add('title', EntityType::class,[
             'class'=>Title::class,
             'choice_label'=>'name',
-            'multiple'=>true,
-            'expanded'=>true
 
         ])
             ->add('text', TextareaType::class)
         ->add('attachFile', FileType::class,[
-            'label'=>'Wybierz plik',
+            'label'=>'Pliki',
             'multiple'=>true,
-
-
+            'required'=>false,
 
         ])
             ->add('Wyslij', SubmitType::class)

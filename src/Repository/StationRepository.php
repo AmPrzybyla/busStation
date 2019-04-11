@@ -19,6 +19,26 @@ class StationRepository extends ServiceEntityRepository
         parent::__construct($registry, Station::class);
     }
 
+    public function findNotRead()
+    {
+        $db =$this->createQueryBuilder('s');
+
+        return $db->andwhere('s.readed != :value')
+            ->setParameter('value', 1)
+            ->orderBy('s.id', 'DESC')
+            ->getQuery()
+            ->getResult();
+    }
+
+    public function findLast()
+    {
+        $db= $this->createQueryBuilder('s');
+
+        return $db->orderBy('s.id', 'DESC')
+            ->setMaxResults(1)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
     // /**
     //  * @return Station[] Returns an array of Station objects
     //  */

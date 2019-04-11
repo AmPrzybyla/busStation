@@ -21,7 +21,8 @@ class Station
     private $id;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Title", inversedBy="stations")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Title", inversedBy="stations")
+     * @ORM\JoinColumn(nullable=false)
      * */
     private $title;
 
@@ -43,7 +44,7 @@ class Station
 
     /**
      * @Assert\Valid()
-     * @Assert\Count(3)
+     * @Assert\Count(max=3, maxMessage="You cannot upload more than 3 files")
      * @ORM\OneToMany(targetEntity="App\Entity\File", mappedBy="station", cascade={"persist"})
      */
     private $files;
@@ -60,7 +61,7 @@ class Station
     }
 
     /**
-     * @return Collection
+     * @return mixed
      */
     public function getTitle()
     {
