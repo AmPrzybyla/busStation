@@ -37,7 +37,7 @@ class AdminController extends AbstractController
      */
     public function listOfUnreadNotification()
     {
-        return $this->render('admin/list.html.twig', ['notifications'=>$this->stationRepository->findLast()]);
+        return $this->render('admin/list.html.twig', ['notifications'=>$this->stationRepository->findNotRead()]);
     }
 
     /**

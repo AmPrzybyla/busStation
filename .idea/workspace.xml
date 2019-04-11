@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a542085-24bd-4da5-beeb-1940b77bb849" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/busStation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/busStation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Station.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Station.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Title.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Title.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/StationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/StationType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/StationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/StationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/raw-station.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/raw-station.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/station.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/station.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/AdminControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/AdminControllerTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Controller/AdminControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
+            <state relative-caret-position="198">
               <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
                 <element signature="e#41#64#0#PHP" expanded="true" />
@@ -70,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Repository/StationRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="629">
               <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
             </state>
           </provider>
@@ -102,11 +86,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="198">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
               <folding>
                 <element signature="e#35#58#0#PHP" expanded="true" />
               </folding>
@@ -159,10 +143,10 @@
         <option value="$PROJECT_DIR$/src/Entity/Station.php" />
         <option value="$PROJECT_DIR$/tests/Entity/StationTest.php" />
         <option value="$PROJECT_DIR$/tests/Entity/FileTest.php" />
-        <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
         <option value="$PROJECT_DIR$/src/Repository/StationRepository.php" />
         <option value="$PROJECT_DIR$/tests/Controller/HomeControllerTest.php" />
         <option value="$PROJECT_DIR$/tests/Controller/AdminControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
       </list>
     </option>
   </component>
@@ -402,15 +386,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554816504412</updated>
-      <workItem from="1554816505793" duration="52844000" />
+      <workItem from="1554816505793" duration="53263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52844000" />
+    <option name="totallyTimeSpent" value="53263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
@@ -600,29 +585,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/StationRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Controller/HomeControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="e#41#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="52" />
-          <folding>
-            <element signature="e#35#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -639,10 +607,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Controller/AdminControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="198">
           <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
             <element signature="e#41#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/StationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#35#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
